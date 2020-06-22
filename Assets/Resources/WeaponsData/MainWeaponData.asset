@@ -9,8 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b3a549244156a024ab973b6898a1a1a7, type: 3}
-  m_Name: TankData
+  m_Script: {fileID: 11500000, guid: d35362994afe1db4382ffaf8f03d91e4, type: 3}
+  m_Name: MainWeaponData
   m_EditorClassIdentifier: 
-  SpeedMovement: 200
-  SpeedRotation: 100
+  SpeedFire: 0

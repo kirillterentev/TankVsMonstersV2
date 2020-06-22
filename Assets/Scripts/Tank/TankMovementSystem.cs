@@ -19,11 +19,11 @@ public class TankMovementSystem : IVehicleMovement
 
 	public void SetVelocity(Vector3 velocity)
 	{
-		view.Rigidbody.velocity = view.Transform.TransformDirection(velocity) * data.SpeedMovement;
+		view.Rigidbody.velocity = view.Transform.TransformDirection(velocity) * data.SpeedMovement * Time.fixedDeltaTime;
 	}
 
 	public void SetRotation(Vector3 rotation)
 	{
-		view.Transform.rotation *= Quaternion.Euler(rotation * data.SpeedRotation);
+		view.Transform.rotation *= Quaternion.Euler(rotation * data.SpeedRotation * Time.fixedDeltaTime);
 	}
 }
